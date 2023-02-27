@@ -75,13 +75,14 @@ p {
     text-indent: 2ch;
     cursor: grab;
     color: red;
+    padding: 5px;
 }
 
 
-.row {
+/* .row {
     --bs-gutter-x: 15rem;
     padding-right: 0px;
-}
+} */
 
 .dropZone {
     width: 100%;

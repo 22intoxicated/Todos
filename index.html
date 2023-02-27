@@ -13,17 +13,18 @@
 </head>
 
 <body>
-    <nav class="nav nav-pills flex-column flex-sm-row mb-3">
-        <a class="flex-md-fill text-lg-center nav-link active" aria-current="page" href="#">Set your TODOs</a>
-
+    <nav class="nav nav-pills flex-column flex-sm-row mb-3 ">
+        <a class="flex-md-fill text-lg-center nav-link active fixed-top py-3-" aria-current="page" href="#">
+            <div class="" style="position: sticky;">Set your TODOs</div>
+        </a>
     </nav>
-    <div class="container">
-        <div class="row row-cols-lg-5">
-            <div class="col-2">
-                <div class="card" style="width: 15rem;">
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-col-md-5 flex-nowrap">
+            <div class="col col-md-3">
+                <div class="card" style="width:100%;">
                     <div class="blank"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">My to do list</h5>
+                    <div class="card-body px-0">
+                        <h5 class="card-title px-3 p-2 rounded-2">My to do list</h5>
                         <div id="myTodoContainer" draggable="true" ondragstart="drag(event)"> </div>
                         <input type="text" id="task" value="" placeholder="Add your task" class="mb-3">
                         <button class="btn btn-primary" id="click" onclick="addtask()">Add</button>
@@ -31,57 +32,57 @@
                 </div>
             </div>
 
-            <div class="col">
-                <div class="col-2">
-                    <div class="card" style="width: 15rem;">
-                        <div class="blank"></div>
-                        <div class="card-body">
-                            <h5 class="card-title" onmouseover="audio.play()">In progress</h5>
-                            <div id="inProgressContainer" class="dropZone" ondrop="drop(event)"
-                                ondragover="allowDrop(event)"></div>
-                            <div id=""></div>
-                            <div id=""> </div>
-                            <div id="">
-                            </div>
+            <div class="col col-md-3">
+                <div class="card" style="width:100%;">
+                    <div class="blank"></div>
+                    <div class="card-body px-0">
+                        <h5 class="card-title px-3 p-2 rounded-2" onmouseover="audio.play()">In progress</h5>
+                        <div id="inProgressContainer" class="dropZone" ondrop="drop(event)"
+                            ondragover="allowDrop(event)"></div>
+                        <div id=""></div>
+                        <div id=""> </div>
+                        <div id="">
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- <div class="col">
+            </div> -->
 
-            <div class="col">
-                <div class="col-2">
-                    <div class="card" style="width: 15rem;">
-                        <div class="blank"></div>
-                        <div class="card-body">
-                            <h5 class="card-title">Done</h5>
-                            <div id="doneContainer" class="dropZone" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            </div>
-                            <div id=""></div>
-                            <div id=""> </div>
-                            <div>
-                            </div>
+            <div class="col col-md-3">
+                <div class="card" style="width:100%;">
+                    <div class="blank"></div>
+                    <div class="card-body px-0">
+                        <h5 class="card-title px-3 p-2 rounded-2">Done</h5>
+                        <div id="doneContainer" class="dropZone" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                        <div id=""></div>
+                        <div id=""> </div>
+                        <div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col ">
-                <div class="col-2">
-                    <div class="card" style="width: 15rem;">
-                        <div class="blank"></div>
-                        <div class="card-body">
-                            <h5 class="card-title">Bin</h5>
-                            <div id="bin" class="dropZone" ondrop="drop(event)" ondragover="allowDrop(event)">
-                            </div>
-                            <div id=""></div>
-                            <div id=""> </div>
-                            <div>
-                                <button class="btn btn-primary" id="click" onclick="deltodos()">Delete All</button>
-                            </div>
+            <!-- <div class="col">
+            </div> -->
+            <div class="col col-md-3">
+                <div class="card" style="width:100%;">
+                    <div class="blank"></div>
+                    <div class="card-body px-0">
+                        <h5 class="card-title px-3 p-2 rounded-2">Bin</h5>
+                        <div id="bin" class="dropZone" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                        <div id=""></div>
+                        <div id=""> </div>
+                        <div>
+                            <button class="btn btn-primary" id="click" onclick="deltodos()">Delete All</button>
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- <div class="col ">
 
-            </div>
+            </div> -->
 
 
         </div>
